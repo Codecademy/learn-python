@@ -68,7 +68,6 @@ TBD
 **Quadratic Formula:**
 <img src="https://github.com/Codecademy/learn-cpp/blob/master/2-variables/quadratic-formula/graph.gif" align="right" width=250;>
 
--->
 
 - [x] [`Quadratic.swift`](2-variables/quadratic-formula/Quadratic.swift)
 
@@ -127,6 +126,8 @@ TBD
 
 ## 9. Classes ##
 
+-->
+
 ---
 
 ### Cheatsheets ###
@@ -139,22 +140,28 @@ TBD
 
 ### Skill Paths ###
 
-- iOS Development with Swift?
-- watchOS Developmenet with Swift?
+- Analyze Data with Python
+- Visualize Data with Python
+- Build Chatbots with Python
+- Build Web Apps with Flask
+- Build Deep Learning Models with TensorFlow
+- Build a Machine Learning Mode with Python
 
-### Talking Swift ###
+### Courses ###
 
-- Coming Soon
+- Learn Hardware Programming with CircuitPython
+- Learn Statistics with Python
+- Learn Flask
 
-### Swift Community Challenge 2020 ###
+### Official Documentation ###
 
-* Coming Soon
+- https://docs.python.org/3
 
-### Swift Style Guides ###
+### Python Style Guides ###
 
-* Codecademy Swift Style Guide
-* [LinkedIn Swift Style Guide](https://github.com/linkedin/swift-style-guide)
-* [Google Swift Style Guide](https://google.github.io/swift/)
+* Codecademy Python Style Guide - TBA
+* [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+* [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 
 ## Contribution Guidelines
 
