@@ -135,11 +135,9 @@ TBD
 
 ### Cheatsheets ###
 
-1. [Hello World](https://www.codecademy.com/learn/learn-swift/modules/learn-swift-hello-world/cheatsheet)
-2. [Variables](https://www.codecademy.com/learn/learn-swift/modules/learn-swift-variables/cheatsheet)
-3. [Condtionals & Logic](https://www.codecademy.com/learn/learn-swift/modules/learn-swift-conditionals/cheatsheet)
-4. [Loops](https://www.codecademy.com/learn/learn-swift/modules/learn-swift-loops/cheatsheet)
-5. [Arrays](https://www.codecademy.com/learn/learn-swift/modules/learn-swift-arrays/cheatsheet)
+1. [Hello World](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-hello-world/cheatsheet)
+2. [Control Flow](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-control-flow/cheatsheet)
+3. [Functions](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-functions/cheatsheet)
 
 ### Skill Paths ###
 
