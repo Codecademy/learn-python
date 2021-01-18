@@ -82,8 +82,8 @@ TBD
 ## 2. Control Flow ##
 
 - [x] [`fortune_cookie.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/fortune.py)
-- [x] [`WWTBAM`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/WWTBAM.py)
-- [x] [`area_calculator`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/area_calculator.py)
+- [x] [`who_wants_to_be_a_millionaire.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/WWTBAM.py)
+- [x] [`area_calculator.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/area_calculator.py)
 
 **Magic 8-Ball:**
 <img src="https://github.com/Codecademy/learn-cpp/blob/master/3-conditionals-and-logic/magic-8-ball/magic8ball.gif" align="right" width=250;>
