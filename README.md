@@ -78,12 +78,17 @@ TBD
 
 - [x] [`PiggyBank.swift`](2-variables/piggy-bank/PiggyBank.swift)
 -->
+
 ## 2. Control Flow ##
+
+- [x] [`fortune_cookie.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/fortune.py)
+- [x] [`WWTBAM`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/WWTBAM.py)
+- [x] [`area_calculator`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/area_calculator.py)
 
 **Magic 8-Ball:**
 <img src="https://github.com/Codecademy/learn-cpp/blob/master/3-conditionals-and-logic/magic-8-ball/magic8ball.gif" align="right" width=250;>
 
-- [x] [`magic8.py`](https://github.com/Codecademy/learn-swift/blob/master/3-conditionals/magic-8-ball/Magic8Ball.swift)
+- [x] [`magic-8-ball.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/magic-8-ball/magic-8-ball.py)
 
 <!--
 ## 4. Loops ##
