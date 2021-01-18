@@ -139,6 +139,10 @@ TBD
 2. [Control Flow](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-control-flow/cheatsheet)
 3. [Functions](https://www.codecademy.com/learn/learn-python-3/modules/learn-python3-functions/cheatsheet)
 
+### Codepedia ###
+
+https://codecademy.github.io/codepedia
+
 ### Skill Paths ###
 
 - Analyze Data with Python
