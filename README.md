@@ -81,6 +81,7 @@ TBD
 
 ## 2. Control Flow ##
 
+- [x] [`space.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/space.py)
 - [x] [`fortune_cookie.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/fortune.py)
 - [x] [`who_wants_to_be_a_millionaire.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/WWTBAM.py)
 - [x] [`area_calculator.py`](https://github.com/Codecademy/learn-python/blob/main/2-control-flow/area_calculator.py)
