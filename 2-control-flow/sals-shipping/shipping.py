@@ -1,36 +1,33 @@
 # Sal's Shipping
-# Sonny Li
+# Eleni A.
 
-weight = 80
+weight = 41.5
+GS_FLAT = 20
+GSP_FLAT = 125
 
-# Ground Shipping 🚚
+#Basic Scale Shipping costs
+def basic_shipping(weight):
+  if weight <= 2:
+    cost = weight * 1.50
+  elif weight <= 6:
+    cost = weight * 3
+  elif weight <=10:
+    cost = weight * 4
+  else:
+    cost = weight * 4.75
+  return cost
 
-if weight <= 2:
-  cost_ground = weight * 1.5 + 20
-elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
-elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
-else:
-  cost_ground = weight * 4.75 + 20
+#Ground Shipping
+def ground_shipping(weight):
+  cost = basic_shipping(weight)
+  return cost + GS_FLAT
+print("Ground Shipping:", ground_shipping(weight))
 
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
+#Ground Shipping Premium
+print("Ground Shipping Premium:", GSP_FLAT)
 
-cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
-
-if weight <= 2:
-  cost_drone = weight * 4.5
-elif weight <= 6:
-  cost_drone = weight * 9.00
-elif weight <= 10:
-  cost_drone = weight * 12.00
-else:
-  cost_drone = weight * 14.25
-
-print("Drone Shipping: $", cost_drone)
+#Drone Shipping
+def drone_shipping(weight):
+  cost = basic_shipping(weight)
+  return cost * 3
+print("Drone Shipping:", drone_shipping(weight))
