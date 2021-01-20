@@ -5,7 +5,7 @@ weight = 41.5
 GS_FLAT = 20
 GSP_FLAT = 125
 
-#Basic Scale Shipping costs
+#Basic Scale Shipping
 def basic_shipping(weight):
   if weight <= 2:
     cost = weight * 1.50
