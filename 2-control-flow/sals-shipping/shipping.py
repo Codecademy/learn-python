@@ -5,7 +5,7 @@ weight = 41.5
 GS_FLAT = 20
 GSP_FLAT = 125
 
-#Basic Scale Shipping
+# Basic Scale Shipping
 def basic_shipping(weight):
   if weight <= 2:
     cost = weight * 1.50
@@ -17,16 +17,16 @@ def basic_shipping(weight):
     cost = weight * 4.75
   return cost
 
-#Ground Shipping
+# Ground Shipping
 def ground_shipping(weight):
   cost = basic_shipping(weight)
   return cost + GS_FLAT
 print("Ground Shipping:", ground_shipping(weight))
 
-#Ground Shipping Premium
+# Ground Shipping Premium
 print("Ground Shipping Premium:", GSP_FLAT)
 
-#Drone Shipping
+# Drone Shipping
 def drone_shipping(weight):
   cost = basic_shipping(weight)
   return cost * 3
