@@ -14,13 +14,9 @@ elif weight <= 10:
 else:
   cost_ground = weight * 4.75 + 20
 
-print("Ground Shipping $", cost_ground)
-      
 # Ground Shipping Premimum 🚚💨
 
 cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
 
 # Drone Shipping 🛸
 
@@ -33,4 +29,9 @@ elif weight <= 10:
 else:
   cost_drone = weight * 14.25
 
-print("Drone Shipping: $", cost_drone)
+# This makes it easier for the customer to find the cheapest price quickly, while letting them see all their options
+print("Your cheapest price is $" + min(str(cost_ground), str(cost_ground_premium), str(cost_drone)))
+print(" ")
+print("Ground shipping: $" + str(cost_ground))
+print("Premium ground shipping: $" + str(cost_ground_premium))
+print("Drone shipping: $" + str(cost_drone))
