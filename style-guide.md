@@ -3,7 +3,7 @@
 
 ## Comments
 
-- There should be a space between the hashtag and the text.
+- There should be a space between the hashtag and the text for readability.
 - Use multiple `#`s for multiline comments.
 - To write a comment that , use `Output: `.
 
@@ -14,11 +14,15 @@ print("Hello World!")
 
 1. When the output is something short, e.g. one line, the output is either included immediately after the function/method call with some text like "Output: ..."
 2. If that output extends beyond the length of the block, the comment can be included under the function/method call.
-js
+
+```py
 console.log('hi'); // Prints: hi
-js
+```
+
+```py
 console.log('well now this is way longer...');
-// Prints: well now this is way longer...
+// Output: well now this is way longer...
+```
 
 2. If the output is more than a single line, typically, we'll show the code snippet (with syntax highlighting) that we're using. Followed by plain text that reads something like, "Which prints out:". And then some unstyled code snippet (like a bash terminal).
 
