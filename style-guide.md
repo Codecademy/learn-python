@@ -33,12 +33,14 @@ Funcation names in the narrative use `()`, for example `say_name()`.
 Mehtods use `.` in front of it. `.talk()`
 Properties use `.` in front of it. `.count`
 
+--- 
+
 ### To Be Determined...
 
 - Do we capitalize the first word or not?
-    - 👍 Yes: Sarai, Alisha, Alex K, David, Sonny, Kenny
-    - 👎 No: Jamie, Cole, Chris, Alex D, Sophie, Carolyn
+    - 👍 Yes: Sonny, Kenny, David, Sarai, Alex K, Alisha
+    - 👎 No: Sophie, Jamie, Alex D, Cole, Chris, Carolyn
 
 - Single vs Double Quotes in Strings?
-    - `"` Double: Alex K, Alex D, COle, Sarai, Adam, Mariel
+    - `"` Double: Alex K, Alex D, Sarai, Mariel, Cole, Adam
     - `'` Single: Alisha, David, Sophie, Jamie
