@@ -8,7 +8,7 @@
 - When the output is something short, e.g. one line, the output is either included immediately after the function/method call with some text like "`Output: ...`". If that output extends beyond the length of the block, the comment can be included under the function/method call.
 
 ```py
-print("Hi") # Output: Hi
+print("Hi")  # Output: Hi
 ```
 
 Or:
@@ -21,27 +21,26 @@ print("Hello World!")
 - If the output is more than a single line, typically, we'll show the code snippet (with syntax highlighting) that we're using. Followed by plain text that reads something like, "Which prints out:". And then some unstyled code snippet (like a bash terminal).
 
 ```py
-console.log("
-asd
+print(string1 + string2 + ".")
+print(string3 + ".")
 ```
 
 This will print out:
 
 ```bash
-This is like:
-asdf
+Hello goodbye.
+Blah.
 ```
 
 ### Whitespace
 
-<kbd>space</kbd> or <kbd>tab</kbd>? <kbd>spaces</kbd> ftw!
+<kbd>space</kbd> or <kbd>tab</kbd>? Team <kbd>spaces</kbd>!
 
 ### Functions
 
-Funcation names in the narrative use `()`, for example `say_name()`.
-
-Mehtods use `.` in front of it. `.talk()`
-Properties use `.` in front of it. `.count`
+When mentioning funcations in the narrative, use `()` after the function name. For example, `say_name()`.
+For mehtods, use `.` in front of the method name. For example, `.talk()`.
+For properties, use `.` in front of the property name. For example, `.count`.
 
 --- 
 
