@@ -37,10 +37,10 @@ Properties use `.` in front of it. `.count`
 
 ### To Be Determined...
 
-- Do we capitalize the first word or not?
+- Do we capitalize the first word or not in a comment if it's a full sentence?
     - 👍 Yes: Sonny, Kenny, David, Sarai, Alex K, Alisha
     - 👎 No: Sophie, Jamie, Alex D, Cole, Chris, Carolyn
 
-- Single vs Double Quotes in Strings?
+- Single vs Double Quotes in Python strings?
     - `"` Double: Alex K, Alex D, Sarai, Mariel, Cole, Adam
     - `'` Single: Alisha, David, Sophie, Jamie
