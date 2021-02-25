@@ -12,7 +12,7 @@ print("Hello World!")
 # Output: Hello World!
 ```
 
-1. When the output is something short, e.g. 1 line, the output is either included immediately after the function/method call with some text like "Output: ..."
+1. When the output is something short, e.g. one line, the output is either included immediately after the function/method call with some text like "Output: ..."
 2. If that output extends beyond the length of the block, the comment can be included under the function/method call.
 js
 console.log('hi'); // Prints: hi
@@ -20,7 +20,19 @@ js
 console.log('well now this is way longer...');
 // Prints: well now this is way longer...
 
-2. If the output is more than a single line, typically, we'll show the code snippet (with syntax highlighting) that we're using. Followed by plain text that reads something like, "Which prints out:". And then some unstyled code snippet (like a bash terminal). See 2nd pic:
+2. If the output is more than a single line, typically, we'll show the code snippet (with syntax highlighting) that we're using. Followed by plain text that reads something like, "Which prints out:". And then some unstyled code snippet (like a bash terminal).
+
+```py
+console.log("
+asd
+```
+
+This will print out:
+
+```bash
+This is like:
+asdf
+```
 
 ### Whitespace
 
