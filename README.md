@@ -5,6 +5,7 @@
 <!-- [![](https://img.shields.io/badge/language-English-blue.svg)](./README.md) -->
 
 **Senior Curriculum Developer:** Sonny Li (sonny@codecademy.com) [![alt text][2]][2.1] [![alt text][1]][1.1]
+
 **Senior Curriculum Developer:** David Patlut (dpatlut@codecademy.com)
 
 <!-- links to social media icons -->
