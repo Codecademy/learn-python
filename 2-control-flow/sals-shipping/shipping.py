@@ -34,3 +34,12 @@ else:
   cost_drone = weight * 14.25
 
 print("Drone Shipping: $", cost_drone)
+
+# Which one is cheapest?
+
+if cost_ground < cost_ground_premium and cost_ground < cost_drone:
+  print('Ground Shipping is the cheapest at $' + str(round(ground_ship_cost, 2)))
+if cost_ground_premium < cost_ground and cost_ground_premium < cost_drone:
+  print('Ground Shipping Premium is the cheapest at $' + str(round(cost_ground_premium, 2)))
+if cost_drone < cost_ground and cost_drone < cost_ground_premium:
+  print('Drone Shipping is the cheapest at $' + str(round(cost_drone, 2)))
