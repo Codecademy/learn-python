@@ -1,36 +1,33 @@
-# Sal's Shipping
-# Sonny Li
+#Sal's Shipping
+#Ilona Louckova
 
 weight = 80
 
-# Ground Shipping 🚚
-
+#Ground Shipping
+ground_flat = 20.00
 if weight <= 2:
-  cost_ground = weight * 1.5 + 20
+  gs_pp = 1.50
 elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
+  gs_pp = 3.00
 elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
+  gs_pp = 4.00
 else:
-  cost_ground = weight * 4.75 + 20
+  gs_pp = 4.75
+cost_ground = weight * gs_pp + ground_flat
+print ("Ground Shipping $", cost_ground)
 
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
+#Ground Shipping Premium
+cost_premium = 125.00
+print ("Ground Shipping Premium $", cost_premium)
 
-cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
-
+#Drone Shipping
 if weight <= 2:
-  cost_drone = weight * 4.5
+  ds_pp = 4.50
 elif weight <= 6:
-  cost_drone = weight * 9.00
+  ds_pp = 9.00
 elif weight <= 10:
-  cost_drone = weight * 12.00
+  ds_pp = 12.00
 else:
-  cost_drone = weight * 14.25
-
-print("Drone Shipping: $", cost_drone)
+  ds_pp = 14.25
+cost_drone = weight * ds_pp
+print ("Drone Shipping $", cost_drone)
