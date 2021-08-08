@@ -8,3 +8,17 @@ print("  SSS   L     ")
 print("     S  L     ")
 print(" S   S  L     ")
 print("  SSS   LLLLL ")
+
+
+
+name = """ 
+K   K  BBBB
+K  K   B   B
+K K    B   B
+KK     BBBB
+K K    B   B
+K  K.  B   B
+K   K. BBBB
+"""
+ 
+print(name)
