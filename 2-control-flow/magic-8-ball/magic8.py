@@ -1,10 +1,10 @@
 import random
 
-name = "Joe"
+name = "Pratik"
 question = "Will I win the lottery?"
 answer = ""
 
-random_number = random.randint(1, 9)
+random_number = random.randint(1, 12)
 # print(random_number)
 
 if random_number == 1:
@@ -25,6 +25,14 @@ elif random_number == 8:
   answer = "Outlook not so good"
 elif random_number == 9:
   answer = "Very doubtful"
+ elif random_number == 9:
+  answer = "Very doubtful."
+elif random_number == 10:
+  answer = "Ohh My God."
+elif random_number == 11:
+  answer = "Where are you ?"
+elif random_number == 12:
+  answer = "Finally, we win."
 else:
   answer = "Error"
   
