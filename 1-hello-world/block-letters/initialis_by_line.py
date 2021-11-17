@@ -14,9 +14,9 @@ a_line1="  A  "
 a_line2=" A A "
 a_line3="A   A"
 a_line4="AAAAA"
-a_line5="A    A"
-a_line6="A    A"
-a_line7="A    A"
+a_line5="A   A"
+a_line6="A   A"
+a_line7="A   A"
 
 print(j_line1 + "  " + a_line1)
 print(j_line2 + "  " + a_line2)
