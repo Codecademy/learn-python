@@ -151,6 +151,11 @@ TBD
 
 https://codecademy.github.io/codepedia
 
+### Career Paths ###
+
+- Computer Science
+- Data Analyst
+- Data Scientist 
 ### Skill Paths ###
 
 - Analyze Data with Python
