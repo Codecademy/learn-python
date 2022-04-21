@@ -1,0 +1,63 @@
+name = "Chris"
+question = "Will I be a millionaire?"
+answer = ""
+
+import random
+random_number = random.randint(1, 20)
+
+#Prints a random number that is 1 through 20
+print(random_number)
+
+if random_number == 1:
+  answer = "Yes - definitely."
+elif random_number == 2:
+  answer = "It is decidedly so."
+elif random_number == 3:
+  answer = "Without a doubt."
+elif random_number == 4:
+  answer = "Reply hazy, try again."
+elif random_number == 5:
+  answer = "Ask again later."
+elif random_number == 6:
+  answer = "Better not tell you now."
+elif random_number == 7:
+  answer = "My sources say no."
+elif random_number == 8:
+  answer = "Outlook not so good."
+elif random_number == 9:
+  answer = "Very doubtful."
+elif random_number == 10:
+  answer = "The stars not in your favor."
+elif random_number == 11:
+  answer = "My personal opinion is a no."
+elif random_number == 12:
+  answer = "Does not compute."
+elif random_number == 13:
+  answer = "Provide coffee and you shall recieve."
+elif random_number == 14:
+  answer = "Absouletly - not."
+elif random_number == 15:
+  answer = "100 percent."
+elif random_number == 16:
+  answer = "Most likely."
+elif random_number == 17:
+  answer = "Come back again in 10 minutes."
+elif random_number == 18:
+  answer = "I say yes."
+elif random_number == 19:
+  answer = "Maybe?"
+elif random_number == 20:
+  answer = "Sure, why not."
+else:
+  answer = "Error"
+
+if name == "" and question == "":
+  print("Fill in the blanks to get your answer from the Magic 8-Ball.")
+elif name == "":
+  print("Question: " + question)
+  print("Magic 8-Balls answer: " + answer)
+elif question == "":
+  print("Please ask the Magic 8-Ball a question.")
+else:
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
