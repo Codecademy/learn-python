@@ -1,36 +1,46 @@
-# Sal's Shipping
-# Sonny Li
+#Sal's Shipping
+#Alyssa H.
 
-weight = 80
 
-# Ground Shipping 🚚
+#Some Weight
+weight = 41.5
 
-if weight <= 2:
-  cost_ground = weight * 1.5 + 20
-elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
-elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
+#Ground Shipping (gcost)
+flat_charge = 20.00
+
+if weight <= 2.00:
+  gcost = flat_charge + (1.50 * weight)
+elif weight > 2.00 and weight <= 6.00:  
+  gcost = flat_charge + (3.00 * weight)
+elif weight > 6.00 and weight <= 10.00:
+  gcost = flat_charge + (4.00 * weight) 
 else:
-  cost_ground = weight * 4.75 + 20
+  gcost = flat_charge + (4.75 * weight)
 
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
+#premium cost (pcost)
+pcost = 125.00
 
-cost_ground_premium = 125.00
 
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
-
-if weight <= 2:
-  cost_drone = weight * 4.5
-elif weight <= 6:
-  cost_drone = weight * 9.00
-elif weight <= 10:
-  cost_drone = weight * 12.00
+#drone shipping (dcost)
+if weight <= 2.00:
+  dcost = (weight * 4.50)
+elif weight > 2.00 and weight <= 6.00:
+  dcost = (weight * 9.00)
+elif weight > 6.00 and weight <= 10.00:
+  dcost = (weight * 12.00)
 else:
-  cost_drone = weight * 14.25
+  dcost = (weight * 14.25)
 
-print("Drone Shipping: $", cost_drone)
+# cheapest cost 
+if dcost < gcost and dcost < pcost:
+  cheapest_cost = dcost
+  sm = "Drone Shipping"
+elif gcost < dcost and gcost < pcost:
+  cheapest_cost = gcost
+  sm = "Ground Shipping"
+else:
+  cheapest_cost = pcost
+  sm = "Premium Ground Shipping"
+  
+print("The cheapest shipping option for a package with the weight of " + str(weight) + "lbs. is $" + str(cheapest_cost) + " through " + sm)
+   
