@@ -1,0 +1,16 @@
+# Alexander Piedras 
+# Fun Fact: I Played for a Choir
+print("     A      P P P P      ")
+print("   A   A    P      P  ")
+print(" A       A  P      P  ")
+print(" A A A A A  P P P P     ")
+print(" A       A  P      ")
+print(" A       A  P       ")
+print(" A       A  P             ")
+print("                          ")
+print("      O O O O O O               ")
+print("    O             O           ")
+print("    O             O           ")
+print("    O             O       ")
+print("    O             O             ")
+print("      O O O O O O               ")
