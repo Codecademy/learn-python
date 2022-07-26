@@ -1,10 +1,10 @@
-# Sonny Li
-# Fun Fact: I played guitar in a band called Attica.
-
-print("  SSS   L     ")
-print(" S   S  L     ")
-print(" S      L     ")
-print("  SSS   L     ")
-print("     S  L     ")
-print(" S   S  L     ")
-print("  SSS   LLLLL ")
+#Bhavy
+#Yadav
+#I'm gonna be a someone you know in future
+print("BBBB  Y   Y")
+print("B   B  Y Y")
+print("B   B   Y")
+print("BBBB    Y")
+print("B   B   Y")
+print("B   B   Y")
+print("BBBB    Y")
