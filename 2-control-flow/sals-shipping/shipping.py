@@ -1,36 +1,40 @@
-# Sal's Shipping
-# Sonny Li
+weight = 800.40
 
-weight = 80
+ground_price = None
 
-# Ground Shipping 🚚
+drone_price = None
 
+premium_flat_price = 125
+
+#Ground
 if weight <= 2:
-  cost_ground = weight * 1.5 + 20
-elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
-elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
-else:
-  cost_ground = weight * 4.75 + 20
+  ground_price = weight * 1.5 + 20
+elif weight > 2 and weight <= 6:
+  ground_price = weight * 3 + 20
+elif weight > 6 and weight <= 10:
+  ground_price = weight * 4 + 20
+elif weight > 10:
+  ground_price = weight * 4.75 + 20
 
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
+print("Ground price $", round(ground_price, 2))
 
-cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
-
+#Drone
 if weight <= 2:
-  cost_drone = weight * 4.5
-elif weight <= 6:
-  cost_drone = weight * 9.00
-elif weight <= 10:
-  cost_drone = weight * 12.00
-else:
-  cost_drone = weight * 14.25
+  drone_price = weight * 4.5
+elif weight > 2 and weight <= 6:
+  drone_price = weight * 9
+elif weight > 6 and weight <= 10:
+  drone_price = weight * 12
+elif weight > 10:
+  drone_price = weight * 14.25
 
-print("Drone Shipping: $", cost_drone)
+print("Drone price $", round(drone_price, 1))
+
+cheapest_option = min(ground_price, drone_price, premium_flat_price)
+
+if cheapest_option == ground_price:
+  print("go with ground, it's $", round(ground_price))
+elif cheapest_option == drone_price:
+  print("go with the drone, it's $", round(drone_price, 2))
+else:
+  print("premium, baby")
