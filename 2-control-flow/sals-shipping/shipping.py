@@ -28,7 +28,7 @@ elif weight > 6 and weight <= 10:
 elif weight > 10:
   drone_price = weight * 14.25
 
-print("Drone price $", round(drone_price, 1))
+print("Drone price $", round(drone_price, 2))
 
 cheapest_option = min(ground_price, drone_price, premium_flat_price)
 
