@@ -1,32 +1,29 @@
-import random
+import random as rn
 
-name = "Joe"
-question = "Will I win the lottery?"
+name = input("What is your first name? ")
+question = input("Ask the Mighty 8-Ball, and she will tell your destiny! ")
+random_number = rn.randint(1, 9)
 answer = ""
 
-random_number = random.randint(1, 9)
-# print(random_number)
-
 if random_number == 1:
-  answer = "Yes - definitely"
+  answer += "Yes - definitely."
 elif random_number == 2:
-  answer = "It is decidedly so"
+  answer += "It is decidedly so."
 elif random_number == 3:
-  answer = "Without a doubt"
+  answer += "Without a doubt."
 elif random_number == 4:
-  answer = "Reply hazy, try again"
+  answer += "Reply hazy, try again."
 elif random_number == 5:
-  answer = "Ask again later"
+  answer += "Ask again later."
 elif random_number == 6:
-  answer = "Better not tell you now"
+  answer += "Better not tell you now."
 elif random_number == 7:
-  answer = "My sources say no"
+  answer += "My sources say no."
 elif random_number == 8:
-  answer = "Outlook not so good"
+  answer += "Outlook not so good."
 elif random_number == 9:
-  answer = "Very doubtful"
+  answer += "Very doubtful."
 else:
-  answer = "Error"
-  
-print(name + " asks: " + question)
-print("Magic 8 Ball's answer: " + answer)
+  print("Error! Try again!")
+
+print(name, "asks:", question + "\nMagic 8-Ball's answer:", answer)
