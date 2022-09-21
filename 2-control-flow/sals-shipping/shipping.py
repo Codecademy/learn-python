@@ -25,7 +25,7 @@ elif weight <= 6:
 elif weight <= 10:
     ds_cost = weight * 12
 else:
-    gs_cost = weight * 14.25
+    ds_cost = weight * 14.25
 
 print("The cost for 3 shipping methods is:")
 print("Ground Shipping cost is        : ", gs_cost, "$")
