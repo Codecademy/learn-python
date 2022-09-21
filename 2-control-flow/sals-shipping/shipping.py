@@ -1,36 +1,40 @@
-# Sal's Shipping
-# Sonny Li
+weight = int(input("What is your package weight? "))
 
-weight = 80
-
-# Ground Shipping 🚚
-
-if weight <= 2:
-  cost_ground = weight * 1.5 + 20
-elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
-elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
-else:
-  cost_ground = weight * 4.75 + 20
-
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
-
-cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
+# Ground Shipping cost
+gs_cost = 0
+fc_gs = 20
 
 if weight <= 2:
-  cost_drone = weight * 4.5
+    gs_cost = weight * 1.5 + fc_gs
 elif weight <= 6:
-  cost_drone = weight * 9.00
+    gs_cost = weight * 3 + fc_gs
 elif weight <= 10:
-  cost_drone = weight * 12.00
+    gs_cost = weight * 4 + fc_gs
 else:
-  cost_drone = weight * 14.25
+    gs_cost = weight * 4.75 + fc_gs
 
-print("Drone Shipping: $", cost_drone)
+# Ground shipping premium cost
+gsp_cost = 125
+
+# Drone shipping cost
+ds_cost = 0
+if weight <= 2:
+    ds_cost = weight * 4.5
+elif weight <= 6:
+    ds_cost = weight * 9
+elif weight <= 10:
+    ds_cost = weight * 12
+else:
+    gs_cost = weight * 14.25
+
+print("The cost for 3 shipping methods is:")
+print("Ground Shipping cost is        : ", gs_cost, "$")
+print("Ground Shipping Premium cost is: ", gsp_cost, "$")
+print("Drone Shipping cost is         : ", ds_cost, "$")
+
+if (gs_cost<gsp_cost) and (gs_cost<ds_cost):
+    print("Ground Shipping is your best option with amount: ", gs_cost)
+if (gsp_cost < gs_cost) and (gsp_cost < ds_cost):
+    print("Ground Shipping Premium is your best option with amount: ", gsp_cost)
+if (ds_cost < gs_cost) and (ds_cost < gsp_cost):
+    print("Drone Shipping is your best option with amount: ", ds_cost, "$")
