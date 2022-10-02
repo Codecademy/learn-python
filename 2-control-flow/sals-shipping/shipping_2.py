@@ -7,9 +7,9 @@ cost_ground_shipping_premium = 125
 
 if (weight <= 2):
     cost_ground_shipping = weight * 1.50 + 20.00
-elif (weight > 2) and (weight <= 6):
+elif (weight <= 6):
     cost_ground_shipping = weight * 3.00 + 20.00
-elif (weight > 6) and (weight <= 10):
+elif (weight <= 10):
     cost_ground_shipping = weight * 4.00 + 20.00
 else:
     cost_ground_shipping = weight * 4.75 + 20.00
@@ -23,9 +23,9 @@ cost_drone_shipping = 0
 
 if (weight <= 2):
     cost_drone_shipping = weight * 4.50
-elif (weight > 2) and (weight <= 6):
+elif (weight <= 6):
     cost_drone_shipping = weight * 9.00
-elif (weight > 6) and (weight <= 10):
+elif (weight <= 10):
     cost_drone_shipping = weight * 12.00
 else:
     cost_drone_shipping = weight * 14.25
