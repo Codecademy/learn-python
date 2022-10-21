@@ -1,0 +1,92 @@
+#the goal of this program is to successfully calculate the cheapest shipping method using the Sal's Shippers Carrier based on the user's package information they input.
+
+#weight in lbs
+weight = float(1.5)
+
+
+
+
+
+
+#"Ground Shipping"
+#"2 lb or less"
+if weight <= 2:
+  ground_shipping_unit_price = float(1.50)
+#"Over 2 lb but less than/equal to 6 lb" 
+elif weight > 2 and weight <= 6:
+  ground_shipping_unit_price = float(3.00)
+#"Over 6 lb but less than/equal to 10 lb
+elif weight > 6 and weight <= 10:
+  ground_shipping_unit_price = float(4.00)
+#"Over 10 lb"
+elif weight > 10:
+  ground_shipping_unit_price = float(4.75)
+else : 
+  print("Error")
+
+ground_shipping_flat_charge = float(20.00)
+
+ground_shipping_total_price = weight * ground_shipping_unit_price + ground_shipping_flat_charge
+
+
+
+#"Premium Ground shipping
+premium_ground_shipping_flat_charge = 125
+
+premium_ground_shipping_total_price = premium_ground_shipping_flat_charge 
+
+
+
+#"Drone shipping"
+if weight <= 2:
+  drone_shipping_unit_price = float(4.50)
+elif weight > 2 and weight <= 6:
+  drone_shipping_unit_price = float(9.00)
+elif weight > 6 and weight <= 10:
+  drone_shipping_unit_price = float(12.00)
+elif weight > 10:
+  drone_shipping_unit_price = float(14.25)
+else:
+  print("Error")
+
+drone_shipping_total_price = weight * drone_shipping_unit_price
+
+
+
+
+
+
+#I want to first determine the cheapest shipping method, then print the recommended shipping method and the total price.
+#time to compare prices
+if ground_shipping_total_price <= premium_ground_shipping_total_price and ground_shipping_total_price <= drone_shipping_total_price:
+  shipping_method = "Ground"
+elif premium_ground_shipping_total_price <= ground_shipping_total_price and premium_ground_shipping_total_price <= drone_shipping_total_price:
+  shipping_method = "Premium Ground"
+elif drone_shipping_total_price <= ground_shipping_total_price and drone_shipping_total_price <= premium_ground_shipping_total_price:
+  shipping_method = "Drone"
+else:
+  print("Error")
+
+
+
+
+
+
+#now it's time to set the cheapest shipping method to the variables used in the printed message
+if shipping_method == "Ground":
+  #I googled it, and using format(float, ".2f") will format to a float with two decimal places, round won't keep the zeroes
+  total_price = format(ground_shipping_total_price, '.2f')
+elif shipping_method == "Premium Ground":
+  total_price = format(premium_ground_shipping_total_price, '.2f')
+elif shipping_method == "Drone":
+  total_price = format(drone_shipping_total_price, '.2f')
+else:
+  print("Error")
+
+
+
+
+
+
+#remember to use str() to convert to a string, otherwise syntax error with the print
+print("Based on your package's weight, it is recommended that you use " + str(shipping_method) + " for the best price.\n\nIt will cost you $" + str(total_price) + " to ship with " + str(shipping_method) + ".")
