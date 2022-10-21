@@ -1,6 +1,8 @@
+# Random is imported for ball 8 results
 import random
-
+# A name is chosen, but still the algorithm returns a consistent result when the name is an empty string
 name = "Joe"
+# A question is entered, and the code contemplates a result in the event of a question with an empty string
 question = "Will I win the lottery?"
 answer = ""
 
@@ -28,5 +30,15 @@ elif random_number == 9:
 else:
   answer = "Error"
   
-print(name + " asks: " + question)
-print("Magic 8 Ball's answer: " + answer)
+#print(name + " asks: " + question)
+#print("Magic 8 Ball's answer: " + answer)
+
+# For the solution of the case ball 8, I chose if nested, starting with the possibility when there is no question; if there is a question: it is valued if a name was provided.
+if question == "":
+  print("Do you want ask me, anything?")
+else:
+  if name == "":
+    print("Question: ", question)
+  else:
+    print(name, " ask: ", question)
+    print("Magic 8-Ball's answer: ", answer)
