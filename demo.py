@@ -1,3 +1,7 @@
-building_heights = {"Burj Khalifa": 828, "Shanghai Tower": 632, "Abraj Al Bait": 601, "Ping An": 599, "Lotte World Tower": 554.5, "One World Trade": 541.3}
-print(building_heights["Burj Khalifa"])
-print(building_heights["Ping An"])
+def first_plus_last(lst):
+    return lst[0] + lst[-1]
+
+
+print(first_plus_last([1, 2, 3, 4]))
+print(first_plus_last([8, 2, 5, -8]))
+print(first_plus_last([-10, 2, 3, -4]))
