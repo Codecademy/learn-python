@@ -1,0 +1,48 @@
+weight = 2
+
+variable_cost_ground = 0
+#Ground Shipping
+if weight > 10:
+  variable_cost_ground = 4.75
+elif weight >6:
+  variable_cost_ground = 4.00
+elif weight >2:
+  variable_cost_ground = 3.00
+else: 
+  variable_cost_ground = 1.5
+
+ground_shipping_cost = 20 + weight * variable_cost_ground
+
+#print (ground_shipping_cost)
+
+#Ground Shipping Premium
+
+premium_shipping_cost = 125
+
+
+#Drone 
+if weight > 10:
+  variable_cost_premium = 14.25
+elif weight >6:
+  variable_cost_premium = 12.00
+elif weight >2:
+  variable_cost_premium = 9.00
+else: 
+  variable_cost_premium = 4.50
+
+drone_shipping_cost = weight * variable_cost_premium
+
+if ground_shipping_cost < premium_shipping_cost and ground_shipping_cost < drone_shipping_cost:
+  print("The best fare is to use Regular Ground " + str(ground_shipping_cost))
+
+if premium_shipping_cost < ground_shipping_cost and premium_shipping_cost < drone_shipping_cost:
+  print("The best fare is to use Premium Ground " + str(premium_shipping_cost))
+
+if drone_shipping_cost < ground_shipping_cost and drone_shipping_cost < premium_shipping_cost:
+  print("The best fare is to use Drone Shipping " + str(drone_shipping_cost))
+
+print("\nSee for yourself: \n" )
+print("Ground is  " + str(ground_shipping_cost))
+print("Premium is  " + str(premium_shipping_cost))
+print("Drone is  " + str(drone_shipping_cost))
+
