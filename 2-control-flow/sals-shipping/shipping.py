@@ -14,13 +14,13 @@ elif weight <= 10:
 else:
   cost_ground = weight * 4.75 + 20
 
-print("Ground Shipping $", cost_ground)
+print("Ground Shipping: $", cost_ground)
       
 # Ground Shipping Premimum 🚚💨
 
 cost_ground_premium = 125.00
 
-print("Ground Shipping Premimium $", cost_ground_premium)
+print("Ground Shipping Premium: $", cost_ground_premium)
 
 # Drone Shipping 🛸
 
