@@ -1,0 +1,31 @@
+weight = 80
+cost_ground = 0.00
+cost_drone = 0.00
+cheapest_method = ""
+
+#Ground Shipping
+if weight <= 2: cost_ground = 1.50 * weight + 20.00
+elif weight >= 2 and weight <= 6: cost_ground = 3.00 * weight + 20.00
+elif weight >= 6 and weight <= 10: cost_ground = 4.00 * weight + 20.00
+else: cost_ground = 4.75 * weight + 20.00
+
+#Ground Shipping Premium
+cost_ground_premium = 125.00
+
+#Drone Shipping
+if weight <= 2: cost_drone = 4.50 * weight
+elif weight >= 2 and weight <= 6: cost_drone = 9.00 * weight 
+elif weight >= 6 and weight <= 10: cost_drone = 12.00 * weight
+else: cost_drone = 14.25 * weight
+
+#Compare cost
+list1 = [cost_ground, cost_ground_premium, cost_drone]
+list1.sort()
+if list1[0] == cost_ground: cheapest_method = "Ground Shipping: $" + str(cost_ground)
+elif list1[0] == cost_ground_premium: cheapest_method = "Ground Shipping Premium: $" + str(cost_ground_premium)
+elif list1[0] == cost_drone: cheapest_method = "Drone Shipping: $" + str(cost_drone)
+
+print("Ground Shipping: $" + str(cost_ground))
+print("Ground Shipping Premium: $" + str(cost_ground_premium))
+print("Drone Shipping: $" + str(cost_drone))
+print("The cheapest method is: " + cheapest_method)
