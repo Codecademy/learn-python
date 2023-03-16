@@ -1,6 +1,16 @@
-cool_number = 12 + 30
-cool_number * 5
-print(cool_number)
+letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
-my_dictionary = {"name": "Victor"}
-print(my_dictionary.get("NAME"))
+def unique_english_letters(word):
+    counter = 0
+    for letter in letters:
+        if letter in word:
+            counter += 1
+    return counter
+
+
+print(unique_english_letters("mississippi"))
+print(unique_english_letters("Apple"))
+print(unique_english_letters("Google"))
+
+txt = "She said \"Never let go\"."
+print(txt)
