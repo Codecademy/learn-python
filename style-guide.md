@@ -39,7 +39,7 @@ Blah.
 ### Names
 
 - For functions, use `()` after the function name. For example, `say_name()`.
-- For mehtods, use `.` in front of the method name. For example, `.talk()`.
+- For methods, use `.` in front of the method name. For example, `.talk()`.
 - For properties, use `.` in front of the property name. For example, `.count`.
 
 --- 
