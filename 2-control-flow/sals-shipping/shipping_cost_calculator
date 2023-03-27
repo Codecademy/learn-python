@@ -1,0 +1,61 @@
+# Sal’s Shippers
+# Best, and most affordable Package Shipping
+
+weight = 41.5
+
+# Ground Shipping
+
+# Flat charge
+ground_cost = 20.00
+
+# price per pound 
+if weight <= 2:
+  ground_cost+=weight*1.50 
+elif weight>2 and weight <=6:
+  ground_cost+=weight*3.00
+elif weight >6 and weight<=10:
+  ground_cost+=weight*4.00
+else:
+  ground_cost+=weight*4.75
+
+
+
+# Ground Shipping Premium
+
+# Flat charge
+premium_cost = 125.00
+
+# Drone Shipping
+drone_cost = 0.00
+
+# price per pound 
+
+if weight <= 2:
+  # price per pound
+  drone_cost+=weight*4.50
+elif weight>2 and weight <=6:
+  drone_cost+=weight*9.00
+elif weight >6 and weight<=10:
+  drone_cost+=weight*12.00
+else:
+  drone_cost+=weight*14.75
+
+# Display all the costs of shipping a package of that weight
+
+print("Ground Shipping $ ", round(ground_cost,2))
+
+print("Ground Shipping Premium $ " ,round(premium_cost,2))
+
+print("Drone Shipping $" ,round(drone_cost,2))
+
+
+# Calculation of cheapest shipping method
+
+cheapest_cost = min(ground_cost,premium_cost,drone_cost)
+
+if cheapest_cost == ground_cost:
+  print(f"\nFor {weight} pounds, Ground Shipping is the cheapest: $",cheapest_cost)
+elif cheapest_cost == premium_cost:
+    print(f"\nFor {weight} pounds, Ground Shipping Premium is the cheapest: $", cheapest_cost)
+else:
+    print(f"\nFor {weight} pounds, Drone Shipping is the cheapest: $", cheapest_cost)
