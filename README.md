@@ -143,7 +143,7 @@ https://codecademy.github.io/codepedia
 - Build Chatbots with Python
 - Build Web Apps with Flask
 - Build Deep Learning Models with TensorFlow
-- Build a Machine Learning Mode with Python
+- Build a Machine Learning Model with Python
 
 ### Courses ###
 
