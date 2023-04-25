@@ -1,0 +1,57 @@
+weight = int(input("What is your package weight?"))
+ground_cost = 0
+premium_cost = 125
+drone_cost = 0
+
+#Ground Shipping
+
+if weight > 10:
+  ground_cost = weight * 4.75 + 20
+  print("Ground Shipping:")
+  print(round(ground_cost, 2))
+elif weight >= 6:
+  ground_cost = weight * 4.00 + 20
+  print("Ground Shipping:")
+  print(round(ground_cost, 2))
+elif weight >= 2:
+  ground_cost = weight * 3.00 + 20
+  print("Ground Shipping:")
+  print(round(ground_cost, 2))
+else:
+  ground_cost = weight * 1.50 + 20
+  print("Ground Shipping:")
+  print(round(ground_cost, 2))
+
+#Premium Shipping
+
+print("Premium Shipping Cost:")
+print(premium_cost)
+
+#Drone Shipping
+
+if weight > 10:
+  drone_cost = weight * 14.25
+  print("Drone Shipping:")
+  print(round(drone_cost, 2))
+elif weight >= 6:
+  drone_cost = weight * 12.00
+  print("Drone Shipping:")
+  print(round(drone_cost, 2))
+elif weight >= 2:
+  drone_cost = weight * 9.00
+  print("Drone Shipping:")
+  print(round(drone_cost, 2))
+else:
+  drone_cost = weight * 4.50
+  print("Drone Shipping:")
+  print(round(drone_cost, 2))
+print("")
+
+#Price Comparison
+
+if ground_cost < premium_cost and ground_cost < drone_cost:
+    print("Your cheapest option is Ground Shipping.")
+elif premium_cost < ground_cost and ground_cost < drone_cost:
+    print("Your cheapest option is Premium Shipping.")
+else:
+    print("Your cheapest option is Drone Shipping.")
