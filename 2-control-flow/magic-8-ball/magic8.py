@@ -1,32 +1,38 @@
-import random
+name = "Jessica"
 
-name = "Joe"
-question = "Will I win the lottery?"
+question = "¿Ganaré la lotería?"
+
 answer = ""
 
+import random
+
 random_number = random.randint(1, 9)
-# print(random_number)
+
+print(random_number)
 
 if random_number == 1:
-  answer = "Yes - definitely"
+  answer = "Al chile si"
 elif random_number == 2:
-  answer = "It is decidedly so"
+  answer = "Es decididamente así"
 elif random_number == 3:
-  answer = "Without a doubt"
+  answer = "Sin duda"
 elif random_number == 4:
-  answer = "Reply hazy, try again"
+  answer = "Respuesta confusa, intenta otra vez"
 elif random_number == 5:
-  answer = "Ask again later"
+  answer = "No me molestes xd"
 elif random_number == 6:
-  answer = "Better not tell you now"
+  answer = "Mejor mañana, diantre xd"
 elif random_number == 7:
-  answer = "My sources say no"
+  answer = "Mis fuentes dicen que no"
 elif random_number == 8:
-  answer = "Outlook not so good"
+  answer = "Al chile no"
 elif random_number == 9:
-  answer = "Very doubtful"
+  answer = "No sepo, diablo jeje"
 else:
   answer = "Error"
-  
-print(name + " asks: " + question)
-print("Magic 8 Ball's answer: " + answer)
+
+
+print(name + " pregunta: " + question)
+
+
+print("Bola mágica responde: " + answer)
