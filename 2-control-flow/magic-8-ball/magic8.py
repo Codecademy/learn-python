@@ -1,3 +1,6 @@
+# Magic 8-Ball 🎱
+# Jessica Daniela Ocaña Falcón
+
 name = "Jessica"
 
 question = "¿Ganaré la lotería?"
