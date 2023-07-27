@@ -1,0 +1,36 @@
+# ground shipping
+def get_ground(weight):
+  flat = 20
+  if weight <= 2:
+    return weight * 1.5 + flat
+  elif 2 < weight <= 6:
+    return weight * 3 + flat
+  elif 6 < weight <= 10:
+    return weight * 4 + flat
+  else:
+    return weight * 4.75 + flat
+
+# drone shipping 
+def get_drone(weight):
+  if weight <= 2:
+    return weight * 4.5
+  elif 2 < weight <= 6:
+    return weight * 9
+  elif 6 < weight <= 10:
+    return weight * 12
+  else:
+    return weight * 14.25
+
+def get_cheapest(weight):
+  ground_premium = 125
+  ground = get_ground(weight)
+  drone = get_drone(weight)
+  # prices = [ground, ground_premium, drone]
+  if ground <= ground_premium and ground <= drone:
+    return "ground is cheapest at ${}".format(ground)
+  elif ground_premium < ground and ground_premium < drone:
+    return "ground_premium is cheapest at ${}".format(ground_premium)
+  elif drone < ground_premiun and drone < ground:
+    return "drone is cheapest at ${}".format(drone)
+  else:
+    return "error"
