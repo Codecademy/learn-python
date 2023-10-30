@@ -1,11 +1,12 @@
 import random
 
-name = "Joe"
-question = "Will I win the lottery?"
+name = "Kevin"
+
+question = "Would you like to know if you will win the lottery?"
+
 answer = ""
 
-random_number = random.randint(1, 9)
-# print(random_number)
+random_number = random.randint(1, 10)
 
 if random_number == 1:
   answer = "Yes - definitely"
@@ -25,8 +26,12 @@ elif random_number == 8:
   answer = "Outlook not so good"
 elif random_number == 9:
   answer = "Very doubtful"
+elif random_number == 10:
+  answer = "Signs point to yes"
 else:
   answer = "Error"
-  
-print(name + " asks: " + question)
-print("Magic 8 Ball's answer: " + answer)
+
+if name == "":
+    print("Question: " + question + '\n' + answer)
+else:
+    print(name + " asks: " + question + '\n' + answer)
