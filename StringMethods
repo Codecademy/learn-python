@@ -1,0 +1,39 @@
+highlighted_poems = "Afterimages:Audre Lorde:1997,  The Shadow:William Carlos Williams:1915, Ecstasy:Gabriela Mistral:1925,   Georgia Dusk:Jean Toomer:1923,   Parting Before Daybreak:An Qi:2014, The Untold Want:Walt Whitman:1871, Mr. Grumpledump's Song:Shel Silverstein:2004, Angel Sound Mexico City:Carmen Boullosa:2013, In Love:Kamala Suraiyya:1965, Dream Variations:Langston Hughes:1994, Dreamwood:Adrienne Rich:1987"
+
+# print(highlighted_poems)
+
+highlighted_poems_list = highlighted_poems.split(",")
+
+# print(highlighted_poems_list)
+
+highlighted_poems_stripped = []
+highlighted_poems_details = []
+titles = []
+poets = []
+dates = []
+
+for space in highlighted_poems_list:
+  highlighted_poems_stripped.append(space.strip())
+
+# print(highlighted_poems_stripped)
+
+for colon in highlighted_poems_stripped:
+  highlighted_poems_details.append(colon.split(":"))
+
+# print(highlighted_poems_details)
+
+for details in highlighted_poems_details:
+  titles.append(details[0])
+  poets.append(details[1])
+  dates.append(details[2])
+
+# print(titles)
+# print(poets)
+# print(dates)
+
+# for output in range(len(titles)):
+#   new_string = "The poem {titles} was published by {poets} in {dates}".format(titles = titles[output], poets = poets[output], dates = dates[output])
+#   print(new_string)
+
+for output in range(len(titles)):
+  print(f"The poem {titles[output]} was published by {poets[output]} in {dates[output]}")
