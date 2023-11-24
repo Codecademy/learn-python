@@ -1,0 +1,45 @@
+print( "SSS  L    ")
+print( "S  S L    ")
+print( "S    L    ")
+print( "SSS  L    ")
+print( "  S  L    ")
+print("S  S  L    ")
+print("SSS   LLLLL")
+
+#Betelhem Mulugeta
+#fun fact: I like to read book.
+print("  SSS  ")
+print(" S   S ")
+print(" S     ")
+print("  SSS  ")
+print("     S ")
+print(" S   S ")
+print("  SSS  ")
+name = """
+Print("  SSS  ")
+print(" S   S")
+print(" S    ")
+print("  SSS ")
+print("     S")
+print(" S   S ")
+print("  SSS  ")
+"""
+print(name)
+print("  SSS   L     ")
+print(" S   S  L     ")
+print(" S      L     ")
+print("  SSS   L     ")
+print("     S  L     ")
+print(" S   S  L     ")
+print("  SSS   LLLLL ")
+name = """
+print("  SSS   L ")
+print(" S   S  L ")
+print(" S      L ")
+print("   SSS  L ")
+print("      S L ")
+print(" S    S L ")
+print("  SSS   LLLLL")
+"""
+print(name)
+
