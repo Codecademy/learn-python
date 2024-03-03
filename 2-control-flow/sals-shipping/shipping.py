@@ -16,11 +16,11 @@ else:
 
 print("Ground Shipping $", cost_ground)
       
-# Ground Shipping Premimum 🚚💨
+# Ground Shipping Premium 🚚💨
 
 cost_ground_premium = 125.00
 
-print("Ground Shipping Premimium $", cost_ground_premium)
+print("Ground Shipping Premium $", cost_ground_premium)
 
 # Drone Shipping 🛸
 
