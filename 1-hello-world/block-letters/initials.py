@@ -1,10 +1,23 @@
-# Sonny Li
-# Fun Fact: I played guitar in a band called Attica.
+# Darshan Sharma
+# Fun Fact: I am the best
 
-print("  SSS   L     ")
-print(" S   S  L     ")
-print(" S      L     ")
-print("  SSS   L     ")
-print("     S  L     ")
-print(" S   S  L     ")
-print("  SSS   LLLLL ")
+fName = '''  
+ DDDD
+D     D   
+D       D
+D        D
+D       D
+D     D
+ DDDD'''
+lName = '''
+   SSSSS
+ S
+S
+ S
+  SSSSS
+       S
+        S
+       S
+SSSS'''
+
+print(fName+" "+"arshan"+lName+"harma")
