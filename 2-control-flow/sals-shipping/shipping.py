@@ -1,36 +1,37 @@
-# Sal's Shipping
-# Sonny Li
+weight = 41.5
+#ground shipping
+if(weight<2):
+  g_price = weight * 1.50 + 20.00
+  print("Ground shipping price is : " + str(g_price))
+elif(weight>2 and weight <= 6):
+  g_price = weight * 3.00 + 20.00
+  print("Ground shipping price is : " + str(g_price))
+elif(weight>6 and weight <= 10):
+  g_price = weight * 4.00 + 20.00
+  print("Ground shipping price is : " + str(g_price))
+elif(weight>10):
+  g_price = weight * 4.75 + 20.00
+  print("Ground shipping price is :" + str(g_price))
 
-weight = 80
+#drone shipping
 
-# Ground Shipping 🚚
+if(weight<2):
+  d_price = weight * 4.50
+  print("Drone shipping price is : " + 
+   str(d_price))
+elif(weight>2 and weight <= 6):
+  d_price = weight * 9.00
+  print("Drone shipping price is : " + str(d_price))
+elif(weight>6 and weight <= 10):
+  d_price = weight * 12.00
+  print("Drone shipping price is : " + str(d_price))
+elif(weight>10):
+  d_price = weight * 14.25
+  print("Drone shipping price is : " + str(d_price))
 
-if weight <= 2:
-  cost_ground = weight * 1.5 + 20
-elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
-elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
+if(g_price < d_price):
+  print("Ground shipping is cheaper and thus we reccomend you to use this package")
+elif(g_price > d_price):
+    print("Drone shipping is cheaper and thus we reccomend you to use this package")
 else:
-  cost_ground = weight * 4.75 + 20
-
-print("Ground Shipping $", cost_ground)
-      
-# Ground Shipping Premimum 🚚💨
-
-cost_ground_premium = 125.00
-
-print("Ground Shipping Premimium $", cost_ground_premium)
-
-# Drone Shipping 🛸
-
-if weight <= 2:
-  cost_drone = weight * 4.5
-elif weight <= 6:
-  cost_drone = weight * 9.00
-elif weight <= 10:
-  cost_drone = weight * 12.00
-else:
-  cost_drone = weight * 14.25
-
-print("Drone Shipping: $", cost_drone)
+  print("Both are of same price, so you are more than welcomed to choose the package you prefer.")
