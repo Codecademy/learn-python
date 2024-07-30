@@ -6,31 +6,31 @@ weight = 80
 # Ground Shipping 🚚
 
 if weight <= 2:
-  cost_ground = weight * 1.5 + 20
+  cost_ground = weight * 150 + 20
 elif weight <= 6:
-  cost_ground = weight * 3.00 + 20
+  cost_ground = weight * 300 + 20
 elif weight <= 10:
-  cost_ground = weight * 4.00 + 20
+  cost_ground = weight * 400 + 20
 else:
-  cost_ground = weight * 4.75 + 20
+  cost_ground = weight * 475 + 20
 
-print("Ground Shipping $", cost_ground)
+print("Ground Shipping:", cost_ground + '¢')
       
 # Ground Shipping Premimum 🚚💨
 
-cost_ground_premium = 125.00
+cost_ground_premium = 12500
 
-print("Ground Shipping Premimium $", cost_ground_premium)
+print("Ground Shipping Premimium:", cost_ground_premium + '¢')
 
 # Drone Shipping 🛸
 
 if weight <= 2:
-  cost_drone = weight * 4.5
+  cost_drone = weight * 450
 elif weight <= 6:
-  cost_drone = weight * 9.00
+  cost_drone = weight * 900
 elif weight <= 10:
-  cost_drone = weight * 12.00
+  cost_drone = weight * 1200
 else:
-  cost_drone = weight * 14.25
+  cost_drone = weight * 1425
 
-print("Drone Shipping: $", cost_drone)
+print("Drone Shipping:", cost_drone + '¢')
