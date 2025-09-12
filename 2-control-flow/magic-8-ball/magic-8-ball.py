@@ -33,6 +33,10 @@ else:
 print(playerName, "\'s Question:", playerQuestion)
 
 # Challenge:
-# playerName.isEmpty ? print("Question: \(playerQuestion)") : print("\(playerName) asks: \(playerQuestion)")
+#if question == "":
+#    print("You forgot to ask a question!")
+#else:
+#    print(f"Question: {playerQuestion}" if name == "" else f"{playerName} asks: {playerQuestion}")
+#    print("🎱:", playerName)
 
 print("🎱:", eightBall)
